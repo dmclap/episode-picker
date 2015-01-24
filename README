@@ -4,3 +4,5 @@ Navigate a terminal to this folder.  It can then be run two ways:
 
 python -i show_picker
 >>> pick_show(‘<show name>’)
+
+If you don't want to choose a show at all, you can enter shows into "best.txt", one per line. Then, run the program with no arguments, and it will choose a random episode among the shows that are in that file.

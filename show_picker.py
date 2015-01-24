@@ -13,5 +13,14 @@ def pick_show(show_name):
     return episode
 
 if __name__ == "__main__":
-    print pick_show(sys.argv[1])
+    if len(sys.argv) > 1:
+        print pick_show(sys.argv[1])
+    else:
+        best_shows = []
+        f = open('best.txt')
+        for line in f:
+            best_shows.append(line)
+        show = random.choice(best_shows)
+        print show
+        print pick_show(show)
 
