@@ -1,0 +1,6 @@
+Navigate a terminal to this folder.  It can then be run two ways:
+
+./show_picker.py '<show name>'
+
+python -i show_picker
+>>> pick_show(‘<show name>’)
